@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>主角小鸡 · 视觉基线候选(Ikunism)</title>
+<style>
+  body { font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; margin: 24px auto; max-width: 1080px; padding: 0 16px; color: #26221c; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 18px; margin-top: 40px; border-bottom: 2px solid #e5ddc9; padding-bottom: 6px; }
+  .notice { background: #fff8e6; border: 1px solid #eedca0; border-radius: 8px; padding: 12px 14px; font-size: 13px; line-height: 1.8; }
+  .desc { font-size: 13px; line-height: 1.8; color: #5a5347; }
+  table { border-collapse: collapse; margin-top: 12px; width: 100%; }
+  th, td { border: 1px solid #ddd5c2; padding: 8px; text-align: center; font-size: 12px; }
+  thead th { background: #f3efe3; }
+  td { padding: 10px 6px; }
+  .light { background: #f7f6f1; }
+  .dark { background: #23252b; }
+  img { display: inline-block; vertical-align: middle; }
+  code { font-size: 11px; color: #8a7f6a; }
+  .src { font-size: 12px; color: #8a7f6a; margin-top: 8px; line-height: 1.7; }
+  .overview td { padding: 14px; }
+</style>
+</head>
+<body>
+<h1>主角小鸡 · 视觉基线候选</h1>
+<div class="notice">
+<strong>状态:候选,等用户挑选。</strong>本目录仅为设计候选,不替换、不写入任何现有资产(仓内当前无图片资产;README 第 4 条「先定小鸡视觉基线」待用户拍板后才进入正式管线)。用户提到的参考小鸡形象在仓内未找到,本批为独立候选,收到参考图后按其迭代。<br>
+<strong>合规:</strong>三个候选均为原创卡通小鸡,不含指向真人的词汇与形象;刻意规避「背带裤+中分头+篮球+抖肩」指向性组合(docs/compliance.md 元素风险分级);角色名沿用 docs/asset-naming-conventions.md 的四态命名。
+</div>
+<h2>总览(三个方向 · 平静态)</h2>
+<table class="overview">
+<tr><td class="light"><img src="direction-a-round/chick_idle.svg" width="128" height="128"></td><td class="dark"><img src="direction-a-round/chick_idle.svg" width="128" height="128"></td>
+<td class="light"><img src="direction-b-standing/chick_idle.svg" width="128" height="128"></td><td class="dark"><img src="direction-b-standing/chick_idle.svg" width="128" height="128"></td>
+<td class="light"><img src="direction-c-flat/chick_idle.svg" width="128" height="128"></td><td class="dark"><img src="direction-c-flat/chick_idle.svg" width="128" height="128"></td>
+</tr>
+<tr><th colspan="2">方向 A · 圆胖 Q 版</th>
+<th colspan="2">方向 B · 拟人站姿</th>
+<th colspan="2">方向 C · 梗图感扁平</th>
+</tr>
+</table>
+
+<h2>方向 A · 圆胖 Q 版</h2>
+<p class="desc">身体一体成蛋圆形,大头大眼、短翅膀短脚,脸颊腮红。最萌、最「吉祥物」,32px 下轮廓最可读;适合主线演出、Q 版小剧场与周边表情包。<br><strong>合规说明:</strong>无穿戴签名物;头顶一根呆毛为单根羽毛卷,不是发型指向。</p>
+<table>
+<thead>
+<tr><th rowspan="2">表情 / 尺寸</th><th colspan="2">128px</th><th colspan="2">64px</th><th colspan="2">32px</th></tr>
+<tr><th>亮底</th><th>暗底</th><th>亮底</th><th>暗底</th><th>亮底</th><th>暗底</th></tr>
+</thead>
+<tbody>
+<tr><th>平静 idle<br><code>chick_idle.svg</code></th><td class="light"><img src="direction-a-round/chick_idle.svg" width="128" height="128"></td><td class="dark"><img src="direction-a-round/chick_idle.svg" width="128" height="128"></td><td class="light"><img src="direction-a-round/chick_idle.svg" width="64" height="64"></td><td class="dark"><img src="direction-a-round/chick_idle.svg" width="64" height="64"></td><td class="light"><img src="direction-a-round/chick_idle.svg" width="32" height="32"></td><td class="dark"><img src="direction-a-round/chick_idle.svg" width="32" height="32"></td></tr>
+<tr><th>开心 happy<br><code>chick_happy.svg</code></th><td class="light"><img src="direction-a-round/chick_happy.svg" width="128" height="128"></td><td class="dark"><img src="direction-a-round/chick_happy.svg" width="128" height="128"></td><td class="light"><img src="direction-a-round/chick_happy.svg" width="64" height="64"></td><td class="dark"><img src="direction-a-round/chick_happy.svg" width="64" height="64"></td><td class="light"><img src="direction-a-round/chick_happy.svg" width="32" height="32"></td><td class="dark"><img src="direction-a-round/chick_happy.svg" width="32" height="32"></td></tr>
+<tr><th>上头 hyped<br><code>chick_hyped.svg</code></th><td class="light"><img src="direction-a-round/chick_hyped.svg" width="128" height="128"></td><td class="dark"><img src="direction-a-round/chick_hyped.svg" width="128" height="128"></td><td class="light"><img src="direction-a-round/chick_hyped.svg" width="64" height="64"></td><td class="dark"><img src="direction-a-round/chick_hyped.svg" width="64" height="64"></td><td class="light"><img src="direction-a-round/chick_hyped.svg" width="32" height="32"></td><td class="dark"><img src="direction-a-round/chick_hyped.svg" width="32" height="32"></td></tr>
+<tr><th>破防 broken<br><code>chick_broken.svg</code></th><td class="light"><img src="direction-a-round/chick_broken.svg" width="128" height="128"></td><td class="dark"><img src="direction-a-round/chick_broken.svg" width="128" height="128"></td><td class="light"><img src="direction-a-round/chick_broken.svg" width="64" height="64"></td><td class="dark"><img src="direction-a-round/chick_broken.svg" width="64" height="64"></td><td class="light"><img src="direction-a-round/chick_broken.svg" width="32" height="32"></td><td class="dark"><img src="direction-a-round/chick_broken.svg" width="32" height="32"></td></tr>
+</tbody>
+</table>
+<p class="src">SVG 源:direction-a-round/ 下的 chick_idle.svg · chick_happy.svg · chick_hyped.svg · chick_broken.svg(viewBox 128×128,矢量无损缩放;32px 档为小尺寸可读性预览,量产时按 docs/ai-asset-import-rules.md 重新导出位图)</p>
+
+<h2>方向 B · 拟人站姿</h2>
+<p class="desc">头/身/四肢分离,明确站姿,红色运动头带+拳脚姿态。最能承载坤拳招式演出(化坤手/坤闪靠/风神腿),格斗、斗舞、膳堂投掷关表现力最强;32px 细节偏多,量产时需出简化档。<br><strong>合规说明:</strong>头带为通用体育配件(非头饰发型);刻意无背带裤、无篮球、无舞蹈动作。</p>
+<table>
+<thead>
+<tr><th rowspan="2">表情 / 尺寸</th><th colspan="2">128px</th><th colspan="2">64px</th><th colspan="2">32px</th></tr>
+<tr><th>亮底</th><th>暗底</th><th>亮底</th><th>暗底</th><th>亮底</th><th>暗底</th></tr>
+</thead>
+<tbody>
+<tr><th>平静 idle<br><code>chick_idle.svg</code></th><td class="light"><img src="direction-b-standing/chick_idle.svg" width="128" height="128"></td><td class="dark"><img src="direction-b-standing/chick_idle.svg" width="128" height="128"></td><td class="light"><img src="direction-b-standing/chick_idle.svg" width="64" height="64"></td><td class="dark"><img src="direction-b-standing/chick_idle.svg" width="64" height="64"></td><td class="light"><img src="direction-b-standing/chick_idle.svg" width="32" height="32"></td><td class="dark"><img src="direction-b-standing/chick_idle.svg" width="32" height="32"></td></tr>
+<tr><th>开心 happy<br><code>chick_happy.svg</code></th><td class="light"><img src="direction-b-standing/chick_happy.svg" width="128" height="128"></td><td class="dark"><img src="direction-b-standing/chick_happy.svg" width="128" height="128"></td><td class="light"><img src="direction-b-standing/chick_happy.svg" width="64" height="64"></td><td class="dark"><img src="direction-b-standing/chick_happy.svg" width="64" height="64"></td><td class="light"><img src="direction-b-standing/chick_happy.svg" width="32" height="32"></td><td class="dark"><img src="direction-b-standing/chick_happy.svg" width="32" height="32"></td></tr>
+<tr><th>上头 hyped<br><code>chick_hyped.svg</code></th><td class="light"><img src="direction-b-standing/chick_hyped.svg" width="128" height="128"></td><td class="dark"><img src="direction-b-standing/chick_hyped.svg" width="128" height="128"></td><td class="light"><img src="direction-b-standing/chick_hyped.svg" width="64" height="64"></td><td class="dark"><img src="direction-b-standing/chick_hyped.svg" width="64" height="64"></td><td class="light"><img src="direction-b-standing/chick_hyped.svg" width="32" height="32"></td><td class="dark"><img src="direction-b-standing/chick_hyped.svg" width="32" height="32"></td></tr>
+<tr><th>破防 broken<br><code>chick_broken.svg</code></th><td class="light"><img src="direction-b-standing/chick_broken.svg" width="128" height="128"></td><td class="dark"><img src="direction-b-standing/chick_broken.svg" width="128" height="128"></td><td class="light"><img src="direction-b-standing/chick_broken.svg" width="64" height="64"></td><td class="dark"><img src="direction-b-standing/chick_broken.svg" width="64" height="64"></td><td class="light"><img src="direction-b-standing/chick_broken.svg" width="32" height="32"></td><td class="dark"><img src="direction-b-standing/chick_broken.svg" width="32" height="32"></td></tr>
+</tbody>
+</table>
+<p class="src">SVG 源:direction-b-standing/ 下的 chick_idle.svg · chick_happy.svg · chick_hyped.svg · chick_broken.svg(viewBox 128×128,矢量无损缩放;32px 档为小尺寸可读性预览,量产时按 docs/ai-asset-import-rules.md 重新导出位图)</p>
+
+<h2>方向 C · 梗图感扁平</h2>
+<p class="desc">粗描边+极简五官,坐地蛋形身,死鱼眼/裂纹/汗滴全走贴纸语言。梗图传播性最强、最「沙雕」,适合表情包与社交传播;演出层级表现弱于 A/B。<br><strong>合规说明:</strong>纯几何扁平,无任何配件与动作指向。</p>
+<table>
+<thead>
+<tr><th rowspan="2">表情 / 尺寸</th><th colspan="2">128px</th><th colspan="2">64px</th><th colspan="2">32px</th></tr>
+<tr><th>亮底</th><th>暗底</th><th>亮底</th><th>暗底</th><th>亮底</th><th>暗底</th></tr>
+</thead>
+<tbody>
+<tr><th>平静 idle<br><code>chick_idle.svg</code></th><td class="light"><img src="direction-c-flat/chick_idle.svg" width="128" height="128"></td><td class="dark"><img src="direction-c-flat/chick_idle.svg" width="128" height="128"></td><td class="light"><img src="direction-c-flat/chick_idle.svg" width="64" height="64"></td><td class="dark"><img src="direction-c-flat/chick_idle.svg" width="64" height="64"></td><td class="light"><img src="direction-c-flat/chick_idle.svg" width="32" height="32"></td><td class="dark"><img src="direction-c-flat/chick_idle.svg" width="32" height="32"></td></tr>
+<tr><th>开心 happy<br><code>chick_happy.svg</code></th><td class="light"><img src="direction-c-flat/chick_happy.svg" width="128" height="128"></td><td class="dark"><img src="direction-c-flat/chick_happy.svg" width="128" height="128"></td><td class="light"><img src="direction-c-flat/chick_happy.svg" width="64" height="64"></td><td class="dark"><img src="direction-c-flat/chick_happy.svg" width="64" height="64"></td><td class="light"><img src="direction-c-flat/chick_happy.svg" width="32" height="32"></td><td class="dark"><img src="direction-c-flat/chick_happy.svg" width="32" height="32"></td></tr>
+<tr><th>上头 hyped<br><code>chick_hyped.svg</code></th><td class="light"><img src="direction-c-flat/chick_hyped.svg" width="128" height="128"></td><td class="dark"><img src="direction-c-flat/chick_hyped.svg" width="128" height="128"></td><td class="light"><img src="direction-c-flat/chick_hyped.svg" width="64" height="64"></td><td class="dark"><img src="direction-c-flat/chick_hyped.svg" width="64" height="64"></td><td class="light"><img src="direction-c-flat/chick_hyped.svg" width="32" height="32"></td><td class="dark"><img src="direction-c-flat/chick_hyped.svg" width="32" height="32"></td></tr>
+<tr><th>破防 broken<br><code>chick_broken.svg</code></th><td class="light"><img src="direction-c-flat/chick_broken.svg" width="128" height="128"></td><td class="dark"><img src="direction-c-flat/chick_broken.svg" width="128" height="128"></td><td class="light"><img src="direction-c-flat/chick_broken.svg" width="64" height="64"></td><td class="dark"><img src="direction-c-flat/chick_broken.svg" width="64" height="64"></td><td class="light"><img src="direction-c-flat/chick_broken.svg" width="32" height="32"></td><td class="dark"><img src="direction-c-flat/chick_broken.svg" width="32" height="32"></td></tr>
+</tbody>
+</table>
+<p class="src">SVG 源:direction-c-flat/ 下的 chick_idle.svg · chick_happy.svg · chick_hyped.svg · chick_broken.svg(viewBox 128×128,矢量无损缩放;32px 档为小尺寸可读性预览,量产时按 docs/ai-asset-import-rules.md 重新导出位图)</p>
+
+<p class="src" style="margin-top:32px">挑选流程(用户拍板后):选定方向 → 按 docs/art-tools.md 工作流批量出四态+动作 → 过 docs/ai-asset-import-rules.md 导入规则 → 按 docs/asset-naming-conventions.md 命名进正式资产目录(届时清掉本候选目录)。本页双击即可打开,无外部依赖。</p>
+</body>
+</html>
