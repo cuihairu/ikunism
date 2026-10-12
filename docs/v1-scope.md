@@ -6,7 +6,7 @@
 
 - 正典依据:`docs/levels.md` §5 平台分期首行 **Steam Demo**(序章 + 第一章 4 关 + 第二章 4 关)与 `docs/gameplay-v3.md`「**V1 验收标准(Steam Demo)**」同名互证——第一个版本 = **V1 = Steam Demo**,关卡细案在 `docs/levels-demo-spec.md`(11 关全量配表与台词)。
 - 自行假设(非交互):派发口"第一个版本"按上述正典口径执行;若另指 Steam EA 正式版,裁剪逻辑需另行整理,不在本轮。
-- 平台策略前提:Steam 买断制先行、微信/抖音小游戏后行(`docs/engine-selection.md` §0);引擎定 Cocos Creator 3.8.x(README 现状 + 选型结论一致)。
+- 平台策略前提:Steam 买断制先行、微信/抖音小游戏后行(`docs/engine-selection.md` §0);引擎定 Godot 4.x(2026-10-04 用户拍板 Steam-only 重估,见 `docs/engine-selection.md` §0.1;2026-10-11 第三十轮随轮修正本档残留的 Cocos 口径)。
 
 ## 1. 做什么(V1 范围总表)
 
@@ -38,7 +38,7 @@
 | 存档 | 本地存档 + 存档继承接口 Schema 先行(人心灯/醒世报/四宝进度,云存档 Schema 同构) | gameplay-v3 存档条、demo-spec D-T03 |
 | 引导钩子 | 愿望单引导(软性不弹窗强拉,D-T04) | demo-spec D-T04 |
 | 配表 | 数值与配表全进 `packages/game-config`,按模块分文件(json),唤醒 NPC/灯/报文案配表化 | gameplay-v3 配表条 |
-| 工程 | Cocos Creator 3.8.x;场景结构 `Chapter{n}/Level{m}`;Boot/Home/Gameplay 组件壳模板已在 `apps/game/creator-templates` | `docs/cocos-project-plan.md`、`docs/creator-integration-playbook.md` 等 creator-* 系列 |
+| 工程 | Godot 4.x(引擎工程未初始化,场景结构 `Chapter{n}/Level{m}` 惯例沿用);`apps/game/creator-templates` 为 Cocos 时代遗留参考,不再作为 V1 工程基线 | `docs/engine-selection.md` §0.1 |
 | 降敏管线 | 全量远端配置 + 热更降敏口径从 V1 起生效 | `docs/compliance.md` |
 
 ### 1.4 合规闸门(V1 必过)
@@ -53,7 +53,7 @@
 
 | 内容 | 去向 | 依据 |
 | --- | --- | --- |
-| 三~十章后八关体系:M4 切瓜/M5 潜行/M6 守卫战/M7 卡牌审判、真香机制、七罪后五章叙事 | Steam EA | levels §5;demo-spec 头部范围声明 |
+| 三~十章后八关体系:M4 弹幕/M5 潜行/M6 食度捕食/M7 卡牌审判、真香机制、七罪后五章叙事 | Steam EA | levels §5;demo-spec 头部范围声明 |
 | 多结局:宽恕线/心魔线判定、隐藏独白、醒世报常设八份(号外除外) | EA | levels §4.2、gameplay-v3 V1 验收(号外口径 A5) |
 | 多周目/逆流周目;三章起的章节隐藏挑战;匾额合成与百戏楼兑换(收集侧 UI) | EA——序章/一/二章三挑战本身在 Demo 内可达成并发奖(第二十八轮勘误:demo-spec §6.1 明载匾额 6、解锁物 9、隐藏平台 3 均 Demo 内可得,原行"隐藏挑战与发放"整体 DEFER 系误划) | levels §4.1、§4.4;demo-spec §6.1 |
 | 收集全量:黑话图鉴页/旧戏残页/勋章墙/见证墙/唤醒之数 UI(词条只计数入存档继承) | EA | demo-spec §6 各条 Demo 内可得列 |
@@ -62,7 +62,7 @@
 
 ## 3. V1 还差的缺口(按依赖序)
 
-1. **编辑器工程**:`apps/game` 为 TS 骨架 + Creator 模板,未初始化正式 Creator 工程;Creator 3.8.x 编辑器无官方 Linux 版(2026-09-30 已核,Cocos 4 开源 headless 为后续观察点),待桌面机安装后按 `cocos-project-plan.md` 初始化。
+1. **编辑器工程**:`apps/game` 为 TS 骨架 + Creator 模板,未初始化正式 Creator 工程;Creator 3.8.x 编辑器无官方 Linux 版(2026-09-30 已核,Cocos 4 开源 headless 为后续观察点),待桌面机安装后按 `cocos-project-plan.md` 初始化。(2026-10-11 第三十轮注:引擎改定 Godot 4.x 后,本条初始化路径按 Godot 工程重述,`cocos-project-plan.md` 作历史参考;缺口实质不变=正式引擎工程未建。)
 2. **compliance 终审**:A3/A6 的指向性组合检查未跑,是文案入库前置闸门。
 3. **配表映射**:demo-spec → `packages/game-config` 的字段映射未做(demo-spec 明言不在其范围)。
 4. **素材生产**:占位资产清单已有,生产未启动;M2 连招手感是 Demo 生死线(levels §5),帧数据表已就绪、可先白盒验证。
@@ -78,3 +78,4 @@
 
 - 2026-09-30 第二十七轮新建本档:占号前 grep 全库空闲(第二十六轮=levels §23.6/§21.4/§22 回写销注轮);纯索引零复制,所有数值与文案以上游锚点为唯一权威;假设一条:"第一个版本"=Steam Demo(§0);`docs/story.md`、`docs/levels.md`、`docs/gameplay-v3.md`、`docs/levels-demo-spec.md` 本轮零改动。
 - 2026-10-01 第二十八轮对照核对(V1 三章 11 关 vs story/levels 四稿):①§2 DEFER 行勘误——"章节隐藏挑战与匾额/解锁物发放"原整体划 EA,与 demo-spec §6.1(Demo 内可得:匾额 6/解锁物 9/隐藏平台 3)矛盾,收窄为三章起挑战+匾额合成/百戏楼兑换,并在 §1.1 补「收集与挑战」行;②下游锚点修正随轮落根稿(levels P0-1 黑潮无形口径、P0-2 中点入队+1=P0-T10、P0-3 唤醒教学不重复发灯、1-2 审判分→得分率、1-4 补曲终未归零即败+复战 50%;story 一章"拿不到真言"→"拿不到真东西",真言系四章起 M5 收集品专名,docs/story 一章原文无此词);demo-spec/docs/levels/docs/story 本轮零改动。
+- 2026-10-11 第三十轮:①§2 DEFER 行模块名随三章重设计修正(M4 切瓜→M4 弹幕、M6 守卫战→M6 食度捕食;原行模块编号与 gameplay-v3 模块总表错位,一并校正);②§0/§1.3/§3 残留 Cocos 口径随轮修正为 Godot 4.x——选型改定于 2026-10-04 `engine-selection.md` §0.1(用户拍板),非本轮决策,本档补同步;③瓜系梗弃用对本档无直接数值影响:Demo 三章(序章+一二章)不含膳堂内容,§1.2 引用的 2Z-T19 只及 ID 不及文案(文案已在 demo-spec §3 改写)。上游改动总账见 `docs/story.md` §21、`docs/levels.md` §24。
