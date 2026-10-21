@@ -2,6 +2,8 @@
 
 # Ikunism
 
+[![Status](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/cuihairu/ikunism/releases)
+
 一个以篮球和小鸡梗图为核心视觉的游戏 monorepo。当前方向:主线章节制叙事游戏《爱坤宗》(宗主被镇压、弟子化鸡、闯关收碎片、唤醒同门),平台策略为 Steam 买断制先行,微信小游戏和抖音小游戏后行(降敏 F2P 版,变现只考虑广告,不接支付)。
 
 ## 当前建议
