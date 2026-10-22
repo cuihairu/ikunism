@@ -113,7 +113,7 @@ scons platform=web target=template_release optimize=size_extra lto=full \
 
 ### 4.1 monorepo 耦合点
 
-- `apps/game`：当前仅 TS 骨架（bootstrap/services/demo）+ `assets/scripts/*` 模板 + `creator-templates/` 真实组件壳，**无正式引擎工程**（[apps/game/README](apps/game/README.md)），切换零成本。`package.json` 无引擎依赖（仅 workspace 包 + vitest/tsx）。
+- `apps/game`：当前仅 TS 骨架（bootstrap/services/demo）+ `assets/scripts/*` 模板 + `creator-templates/` 真实组件壳，**无正式引擎工程**（[apps/game/README](../apps/game/README.md)），切换零成本。`package.json` 无引擎依赖（仅 workspace 包 + vitest/tsx）。
 - `packages/game-config`：纯数值/文案/关卡配置（gameplay-v2.ts 等），**引擎无关**，切换不受影响。
 - `packages/platform-sdk`：当前是 `MemoryPlatformSdk` 纯接口（login/广告/share/storage），**引擎无关**——但注意它屏蔽的是微信/抖音 JS API 差异；若选 Godot，需在 Godot 侧另接 MiniGameSDK（AnranS 225 方法 / mkdevkit 三形态 SDK），本包作为 TS 侧契约保留，新增 Godot 桥接映射层。
 - `apps/backend`（Go 网关 + shield 规划）：与引擎选择无关（只经 HTTPS/WSS 契约）。

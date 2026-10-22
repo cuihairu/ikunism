@@ -8,8 +8,8 @@
 
 参考：
 
-- [shot-input.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/gameplay/shot-input.ts)
-- [shot-feedback.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/gameplay/shot-feedback.ts)
+- [shot-input.ts](../apps/game/assets/scripts/gameplay/shot-input.ts)
+- [shot-feedback.ts](../apps/game/assets/scripts/gameplay/shot-feedback.ts)
 
 结果类型：
 
@@ -21,8 +21,8 @@
 
 参考：
 
-- [gameplay-scene.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/cocos/gameplay-scene.ts)
-- [GameplaySceneComponent.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/GameplaySceneComponent.ts)
+- [gameplay-scene.ts](../apps/game/assets/scripts/cocos/gameplay-scene.ts)
+- [GameplaySceneComponent.ts](../apps/game/creator-templates/GameplaySceneComponent.ts)
 
 建议把后续表现统一收口到这些方法：
 

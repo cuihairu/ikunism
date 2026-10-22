@@ -8,7 +8,7 @@
 
 参考：
 
-- [HomeSceneComponent.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/HomeSceneComponent.ts)
+- [HomeSceneComponent.ts](../apps/game/creator-templates/HomeSceneComponent.ts)
 
 建议状态：
 
@@ -27,7 +27,7 @@
 
 参考：
 
-- [ResultSceneComponent.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/ResultSceneComponent.ts)
+- [ResultSceneComponent.ts](../apps/game/creator-templates/ResultSceneComponent.ts)
 
 建议状态：
 

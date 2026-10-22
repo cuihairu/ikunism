@@ -8,11 +8,11 @@
 
 组件壳放在：
 
-- [README.md](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/README.md)
-- [BootSceneComponent.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/BootSceneComponent.ts)
-- [HomeSceneComponent.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/HomeSceneComponent.ts)
-- [GameplaySceneComponent.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/GameplaySceneComponent.ts)
-- [ResultSceneComponent.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/ResultSceneComponent.ts)
+- [README.md](../apps/game/creator-templates/README.md)
+- [BootSceneComponent.ts](../apps/game/creator-templates/BootSceneComponent.ts)
+- [HomeSceneComponent.ts](../apps/game/creator-templates/HomeSceneComponent.ts)
+- [GameplaySceneComponent.ts](../apps/game/creator-templates/GameplaySceneComponent.ts)
+- [ResultSceneComponent.ts](../apps/game/creator-templates/ResultSceneComponent.ts)
 
 ## 为什么单独放目录
 
@@ -24,7 +24,7 @@
 
 1. 在 Creator 里建四个场景。
 2. 把对应组件壳复制到 Creator 项目里。
-3. 按 [docs/cocos-field-checklist.md](C:/Users/cui/Workspaces/I-love-playing-ball/docs/cocos-field-checklist.md) 挂好字段。
+3. 按 [docs/cocos-field-checklist.md](cocos-field-checklist.md) 挂好字段。
 4. 再逐步把仓库里的业务层接进来：
    - `assets/scripts/core`
    - `assets/scripts/gameplay`

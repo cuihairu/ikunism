@@ -8,8 +8,8 @@
 
 参考：
 
-- [boot-scene.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/cocos/boot-scene.ts)
-- [boot-scene-schema.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/cocos/boot-scene-schema.ts)
+- [boot-scene.ts](../apps/game/assets/scripts/cocos/boot-scene.ts)
+- [boot-scene-schema.ts](../apps/game/assets/scripts/cocos/boot-scene-schema.ts)
 
 建议字段：
 
@@ -19,8 +19,8 @@
 
 参考：
 
-- [home-scene.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/cocos/home-scene.ts)
-- [home-scene-schema.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/cocos/home-scene-schema.ts)
+- [home-scene.ts](../apps/game/assets/scripts/cocos/home-scene.ts)
+- [home-scene-schema.ts](../apps/game/assets/scripts/cocos/home-scene-schema.ts)
 
 建议字段：
 
@@ -32,8 +32,8 @@
 
 参考：
 
-- [gameplay-scene.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/cocos/gameplay-scene.ts)
-- [gameplay-node-map.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/cocos/gameplay-node-map.ts)
+- [gameplay-scene.ts](../apps/game/assets/scripts/cocos/gameplay-scene.ts)
+- [gameplay-node-map.ts](../apps/game/assets/scripts/cocos/gameplay-node-map.ts)
 
 建议字段：
 
@@ -52,8 +52,8 @@
 
 参考：
 
-- [result-scene.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/cocos/result-scene.ts)
-- [result-scene-schema.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/cocos/result-scene-schema.ts)
+- [result-scene.ts](../apps/game/assets/scripts/cocos/result-scene.ts)
+- [result-scene-schema.ts](../apps/game/assets/scripts/cocos/result-scene-schema.ts)
 
 建议字段：
 

@@ -25,13 +25,13 @@
 
 ### A. 真实组件壳
 
-从 [creator-templates](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/README.md) 复制：
+从 [creator-templates](../apps/game/creator-templates/README.md) 复制：
 
-- [BootSceneComponent.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/BootSceneComponent.ts)
-- [HomeSceneComponent.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/HomeSceneComponent.ts)
-- [GameplaySceneComponent.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/GameplaySceneComponent.ts)
-- [ResultSceneComponent.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/ResultSceneComponent.ts)
-- [shared.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/creator-templates/shared.ts)
+- [BootSceneComponent.ts](../apps/game/creator-templates/BootSceneComponent.ts)
+- [HomeSceneComponent.ts](../apps/game/creator-templates/HomeSceneComponent.ts)
+- [GameplaySceneComponent.ts](../apps/game/creator-templates/GameplaySceneComponent.ts)
+- [ResultSceneComponent.ts](../apps/game/creator-templates/ResultSceneComponent.ts)
+- [shared.ts](../apps/game/creator-templates/shared.ts)
 
 ### B. 业务模板层
 
@@ -97,7 +97,7 @@
 
 字段清单直接看：
 
-- [docs/cocos-field-checklist.md](C:/Users/cui/Workspaces/I-love-playing-ball/docs/cocos-field-checklist.md)
+- [docs/cocos-field-checklist.md](cocos-field-checklist.md)
 
 挂载顺序建议：
 
@@ -168,9 +168,9 @@
 
 ## 推荐配套文档
 
-- [docs/cocos-project-plan.md](C:/Users/cui/Workspaces/I-love-playing-ball/docs/cocos-project-plan.md)
-- [docs/cocos-component-mapping.md](C:/Users/cui/Workspaces/I-love-playing-ball/docs/cocos-component-mapping.md)
-- [docs/cocos-field-checklist.md](C:/Users/cui/Workspaces/I-love-playing-ball/docs/cocos-field-checklist.md)
-- [docs/gameplay-node-binding.md](C:/Users/cui/Workspaces/I-love-playing-ball/docs/gameplay-node-binding.md)
-- [docs/gameplay-feedback-hooks.md](C:/Users/cui/Workspaces/I-love-playing-ball/docs/gameplay-feedback-hooks.md)
-- [docs/home-result-hooks.md](C:/Users/cui/Workspaces/I-love-playing-ball/docs/home-result-hooks.md)
+- [docs/cocos-project-plan.md](cocos-project-plan.md)
+- [docs/cocos-component-mapping.md](cocos-component-mapping.md)
+- [docs/cocos-field-checklist.md](cocos-field-checklist.md)
+- [docs/gameplay-node-binding.md](gameplay-node-binding.md)
+- [docs/gameplay-feedback-hooks.md](gameplay-feedback-hooks.md)
+- [docs/home-result-hooks.md](home-result-hooks.md)

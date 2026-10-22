@@ -6,7 +6,7 @@
 
 ## 推荐节点路径
 
-代码默认参考 [gameplay-node-map.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/cocos/gameplay-node-map.ts)。
+代码默认参考 [gameplay-node-map.ts](../apps/game/assets/scripts/cocos/gameplay-node-map.ts)。
 
 建议最小节点：
 
@@ -48,8 +48,8 @@
 
 参考代码：
 
-- [shot-input.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/gameplay/shot-input.ts)
-- [gameplay-scene.ts](C:/Users/cui/Workspaces/I-love-playing-ball/apps/game/assets/scripts/cocos/gameplay-scene.ts)
+- [shot-input.ts](../apps/game/assets/scripts/gameplay/shot-input.ts)
+- [gameplay-scene.ts](../apps/game/assets/scripts/cocos/gameplay-scene.ts)
 
 规则：
 
