@@ -2,12 +2,11 @@
 
 # Ikunism
 
-<p align="center">
-<a href="https://github.com/cuihairu/ikunism/releases"><img alt="Status" src="https://img.shields.io/badge/status-in%20development-orange"></a>
-</p>
+<p align="center"><a href="https://cuihairu.github.io/ikunism//"><img src="https://img.shields.io/badge/docs-blue" alt="docs"></a></p>
+
+[![Status](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/cuihairu/ikunism/releases)
 
 A game monorepo with basketball and chick memes as the core visual identity. The current direction is *Aikun Sect* (爱坤宗), a narrative game built on a chapter-based main storyline: the sect master suppressed, the disciples turned into chickens, stages cleared to collect fragments, and fellow disciples awakened. On platforms, Steam premium (one-time purchase) comes first, with WeChat and Douyin mini game versions to follow (a desensitized F2P variant, monetized through ads only, no payments).
-
 ## Current recommendations
 
 - The game client engine is finalized as **Godot 4.x** (Steam premium first; decided in the engine re-evaluation on 2026-10-04, see `docs/engine-selection.md` §0.1. Cocos has dropped out of the candidate list, and Unity is kept as the 3D upgrade path).
