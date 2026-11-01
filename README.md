@@ -2,11 +2,10 @@
 
 # Ikunism
 
-<p align="center"><a href="https://cuihairu.github.io/ikunism//"><img src="https://img.shields.io/badge/docs-blue" alt="docs"></a></p>
-
-[![Status](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/cuihairu/ikunism/releases)
+<p align="center"><a href="https://github.com/cuihairu/ikunism/tree/main/docs"><img src="https://img.shields.io/badge/docs-blue" alt="docs"></a>&nbsp;&nbsp;<a href="https://github.com/cuihairu/ikunism/releases"><img src="https://img.shields.io/badge/status-in%20development-orange" alt="status"></a></p>
 
 A game monorepo with basketball and chick memes as the core visual identity. The current direction is *Aikun Sect* (爱坤宗), a narrative game built on a chapter-based main storyline: the sect master suppressed, the disciples turned into chickens, stages cleared to collect fragments, and fellow disciples awakened. On platforms, Steam premium (one-time purchase) comes first, with WeChat and Douyin mini game versions to follow (a desensitized F2P variant, monetized through ads only, no payments).
+
 ## Current recommendations
 
 - The game client engine is finalized as **Godot 4.x** (Steam premium first; decided in the engine re-evaluation on 2026-10-04, see `docs/engine-selection.md` §0.1. Cocos has dropped out of the candidate list, and Unity is kept as the 3D upgrade path).
@@ -18,13 +17,10 @@ A game monorepo with basketball and chick memes as the core visual identity. The
 ```text
 .
 |-- apps
-|   |-- backend          # Backend service: leaderboard/config/event APIs
-|   `-- game             # Cocos Creator game project
+|   |-- backend          # Go backend (leaderboard/config APIs) — archived 2026-10-04, reference only
+|   `-- game             # Game client (TS demo harness + Cocos creator templates; engine direction = Godot 4.x, not yet initialized)
 |-- docs
-|   |-- art-tools.md     # Image generation tools and workflow recommendations
-|   |-- cocos-project-plan.md # Cocos main project plan
-|   |-- gameplay-v1.md   # Gameplay design v1
-|   `-- architecture.md  # Technology choices and directory design
+|   `-- *.md             # Design + audit docs (31 files: engine/gameplay/levels/story/narrative/asset/…)
 |-- packages
 |   |-- game-config      # Shared config, stats, levels, and copy
 |   `-- platform-sdk     # WeChat/Douyin platform capability wrapper
@@ -43,14 +39,15 @@ A game monorepo with basketball and chick memes as the core visual identity. The
 
 ## Next steps
 
-1. Initialize a Cocos Creator project in `apps/game`.
-2. Keep extending the Go service in `apps/backend`, starting with leaderboard persistence and config distribution.
-3. Build a minimal gameplay prototype first, for example "shooting + combos + chick expression changes".
-4. Set a visual baseline for the chick, then batch-generate expressions, skins, and meme assets.
+1. Initialize the Godot 4.x engine project in `apps/game` (see `docs/engine-selection.md` §0.1; the Cocos scaffold stays reference-only).
+2. Build a minimal gameplay prototype first, for example "run-and-jump tutorial level → rhythm module" (see `docs/gameplay-v3.md`).
+3. Set a visual baseline for the chick, then batch-generate expressions, skins, and meme assets.
 
 ## Development docs
 
 - Architecture and technology choices: `docs/architecture.md`
+- Engine selection deep-dive (Godot/Cocos/Unity, Steam first): `docs/engine-selection.md`
+- Game studio capability analysis: `docs/game-studio-analysis.md`
 - Image tools and image-generation workflow: `docs/art-tools.md`
 - Placeholder asset checklist: `docs/placeholder-assets-checklist.md`
 - Asset naming conventions: `docs/asset-naming-conventions.md`
@@ -67,14 +64,23 @@ A game monorepo with basketball and chick memes as the core visual identity. The
 - Gameplay design v1: `docs/gameplay-v1.md`
 - Gameplay design v2 (Aikun Sect: Four Arts training): `docs/gameplay-v2.md`
 - Gameplay design v3 (chapter-based main storyline): `docs/gameplay-v3.md`
+- V1 scope list (Steam Demo): `docs/v1-scope.md`
 - Story bible (worldview / main storyline / seven-sin inner demons / forgiveness ending): `docs/story.md`
+- Story bible for "Aikun Sect: Year of the Rooster Ascension": `docs/story-bible.md`
+- Narrative design bible for "Aikun Sect: Shattered Dream Reunion": `docs/narrative-bible.md`
+- Story bible and narrative design for "Aikun Sect: Rooster Dawn": `docs/narrative-design.md`
+- Kunquan martial-arts system design (Aikun Sect): `docs/kunquan-system.md`
 - Level and gameplay design (chapters/tracks/ending hooks): `docs/levels.md`
+- Level design for "Aikun Sect: Year of the Rooster Ascension": `docs/level-design.md`
+- Demo level spec (prologue + ch.1 + ch.2, with config tables): `docs/levels-demo-spec.md`
 - Trending meme corpus collection and analysis: `docs/meme-collection.md`
 - Platform compliance analysis: `docs/compliance.md`
 
-## Integration testing
+## Reference implementations (runnable)
 
-- Start the backend: `go run ./apps/backend/cmd/server`
+After the 2026-10-04 decisions (engine = Godot 4.x; zero self-built server), the pieces below are reference-level: they exercise the Cocos scaffold demo harness and the archived Go backend. The Godot engine project is not yet initialized.
+
+- Archived Go backend: `go -C apps/backend run ./cmd/server` (`/health`, `/config/game`, `/leaderboard`, `POST /leaderboard/submit`)
 - Game-side offline demo: `pnpm --dir apps/game demo`
 - Game-side online demo: `pnpm --dir apps/game demo:online`
 - Game-side in-memory scene-flow demo: `pnpm --dir apps/game demo:cocos-flow`
